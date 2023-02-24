@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 4</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 4</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      document.write(`
+      <table class="table">
+         <tbody class="table__body">
+         `)
+      for (let rowNumber = 0; rowNumber < 3; rowNumber++) {
+         document.write(`<tr class="table__row">`)
+         for (let i = 1; i <= 7; i++) {
+            document.write(`<td class="table__column">${i}</td>`)
+         }
+         document.write(`</tr>`)
+      }
+      document.write(`
+         </tbody>
+      </table>`)
+   </script>
+</body>
+
+</html>
